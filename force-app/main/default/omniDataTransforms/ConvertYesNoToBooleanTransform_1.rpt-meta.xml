@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <description>Convert yes/no to boolean</description>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;Student&quot; : [ {
+    &quot;name&quot; : &quot;Alice Smith&quot;,
+    &quot;email&quot; : &quot;alice.smith@example.com&quot;,
+    &quot;phone&quot; : &quot;555-123-4567&quot;,
+    &quot;class&quot; : &quot;10A&quot;,
+    &quot;scholarship&quot; : &quot;yes&quot;
+  }, {
+    &quot;name&quot; : &quot;Bob Johnson&quot;,
+    &quot;email&quot; : &quot;bob.j@example.com&quot;,
+    &quot;phone&quot; : &quot;555-987-6543&quot;,
+    &quot;class&quot; : &quot;10B&quot;,
+    &quot;scholarship&quot; : &quot;no&quot;
+  }, {
+    &quot;name&quot; : &quot;Charlie Brown&quot;,
+    &quot;email&quot; : &quot;charlie.b@example.com&quot;,
+    &quot;phone&quot; : &quot;555-111-2222&quot;,
+    &quot;class&quot; : &quot;10A&quot;,
+    &quot;scholarship&quot; : &quot;no&quot;
+  }, {
+    &quot;name&quot; : &quot;Diana Miller&quot;,
+    &quot;email&quot; : &quot;diana.m@example.com&quot;,
+    &quot;phone&quot; : &quot;555-333-4444&quot;,
+    &quot;class&quot; : &quot;10C&quot;,
+    &quot;scholarship&quot; : &quot;yes&quot;
+  } ]
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>true</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>ConvertYesNoToBooleanTransform</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>6c1da14c-4eba-4779-a8c9-bb74a9fdcead</globalKey>
+        <inputFieldName>Student:name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ConvertYesNoToBooleanTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Student:name</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>675acc7f-4cdd-4a23-ad29-42d3ba091845</globalKey>
+        <inputFieldName>Student:scholarship</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ConvertYesNoToBooleanTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Boolean</outputFieldFormat>
+        <outputFieldName>Student:scholarship</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{
+  &quot;yes&quot; : &quot;true&quot;,
+  &quot;no&quot; : &quot;false&quot;
+}</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;Student&quot; : [ {
+    &quot;name&quot; : &quot;Alice Smith&quot;,
+    &quot;email&quot; : &quot;alice.smith@example.com&quot;,
+    &quot;phone&quot; : &quot;555-123-4567&quot;,
+    &quot;class&quot; : &quot;10A&quot;,
+    &quot;scholarship&quot; : &quot;yes&quot;
+  }, {
+    &quot;name&quot; : &quot;Bob Johnson&quot;,
+    &quot;email&quot; : &quot;bob.j@example.com&quot;,
+    &quot;phone&quot; : &quot;555-987-6543&quot;,
+    &quot;class&quot; : &quot;10B&quot;,
+    &quot;scholarship&quot; : &quot;no&quot;
+  }, {
+    &quot;name&quot; : &quot;Charlie Brown&quot;,
+    &quot;email&quot; : &quot;charlie.b@example.com&quot;,
+    &quot;phone&quot; : &quot;555-111-2222&quot;,
+    &quot;class&quot; : &quot;10A&quot;,
+    &quot;scholarship&quot; : &quot;no&quot;
+  }, {
+    &quot;name&quot; : &quot;Diana Miller&quot;,
+    &quot;email&quot; : &quot;diana.m@example.com&quot;,
+    &quot;phone&quot; : &quot;555-333-4444&quot;,
+    &quot;class&quot; : &quot;10C&quot;,
+    &quot;scholarship&quot; : &quot;yes&quot;
+  } ]
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>ConvertYesNoToBooleanTransform_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

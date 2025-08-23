@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <description>Convert a List of objects to a multi-select item</description>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;Student&quot; : [ {
+    &quot;name&quot; : &quot;Alice Smith&quot;,
+    &quot;email&quot; : &quot;alice.smith@example.com&quot;,
+    &quot;phone&quot; : &quot;555-123-4567&quot;,
+    &quot;class&quot; : &quot;10A&quot;,
+    &quot;scholarship&quot; : &quot;yes&quot;
+  }, {
+    &quot;name&quot; : &quot;Bob Johnson&quot;,
+    &quot;email&quot; : &quot;bob.j@example.com&quot;,
+    &quot;phone&quot; : &quot;555-987-6543&quot;,
+    &quot;class&quot; : &quot;10B&quot;,
+    &quot;scholarship&quot; : &quot;no&quot;
+  }, {
+    &quot;name&quot; : &quot;Charlie Brown&quot;,
+    &quot;email&quot; : &quot;charlie.b@example.com&quot;,
+    &quot;phone&quot; : &quot;555-111-2222&quot;,
+    &quot;class&quot; : &quot;10A&quot;,
+    &quot;scholarship&quot; : &quot;no&quot;
+  }, {
+    &quot;name&quot; : &quot;Diana Miller&quot;,
+    &quot;email&quot; : &quot;diana.m@example.com&quot;,
+    &quot;phone&quot; : &quot;555-333-4444&quot;,
+    &quot;class&quot; : &quot;10C&quot;,
+    &quot;scholarship&quot; : &quot;yes&quot;
+  } ]
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>true</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>ConvertListofObjectstoMultiselectItemTransform</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>var:Student:name</formulaConverted>
+        <formulaExpression>Student:name</formulaExpression>
+        <formulaResultPath>Studentname_Formula</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>2d921b43-550b-42d1-b6bc-d9897a9c34ac</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ConvertListofObjectstoMultiselectItemTransform</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>cbe5b87b-1a53-4655-acc9-ee62d42949d3</globalKey>
+        <inputFieldName>Studentname_Formula</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ConvertListofObjectstoMultiselectItemTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Multi-Select</outputFieldFormat>
+        <outputFieldName>StudentName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;Student&quot; : [ {
+    &quot;name&quot; : &quot;Alice Smith&quot;,
+    &quot;email&quot; : &quot;alice.smith@example.com&quot;,
+    &quot;phone&quot; : &quot;555-123-4567&quot;,
+    &quot;class&quot; : &quot;10A&quot;,
+    &quot;scholarship&quot; : &quot;yes&quot;
+  }, {
+    &quot;name&quot; : &quot;Bob Johnson&quot;,
+    &quot;email&quot; : &quot;bob.j@example.com&quot;,
+    &quot;phone&quot; : &quot;555-987-6543&quot;,
+    &quot;class&quot; : &quot;10B&quot;,
+    &quot;scholarship&quot; : &quot;no&quot;
+  }, {
+    &quot;name&quot; : &quot;Charlie Brown&quot;,
+    &quot;email&quot; : &quot;charlie.b@example.com&quot;,
+    &quot;phone&quot; : &quot;555-111-2222&quot;,
+    &quot;class&quot; : &quot;10A&quot;,
+    &quot;scholarship&quot; : &quot;no&quot;
+  }, {
+    &quot;name&quot; : &quot;Diana Miller&quot;,
+    &quot;email&quot; : &quot;diana.m@example.com&quot;,
+    &quot;phone&quot; : &quot;555-333-4444&quot;,
+    &quot;class&quot; : &quot;10C&quot;,
+    &quot;scholarship&quot; : &quot;yes&quot;
+  } ]
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>ConvertListofObjectstoMultiselectItemTransform_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>
