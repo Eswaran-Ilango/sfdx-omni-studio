@@ -58,10 +58,12 @@ global class BMICalculator implements Callable {
             
             if(heightM == null || weightKg == null || heightM == 0 || weightKg == 0 ) {
                 output.put('errorMessage', 'Please provide valid non-zero height and weight for BMI calculation.');
+                output.put('CalculatedBMI', null);
             } else  {
                 Decimal bmi = weightKg / (heightM * heightM);
                 Decimal calculatedBMI = bmi.setScale(2);
                 output.put('CalculatedBMI', calculatedBMI);
+                output.put('errorMessage', null);
             }
         }catch(Exception e) {
             output.put('errorMessage', 'Exception in BMICalculator invokeMethod: ' + e.getMessage() + e.getStackTraceString() + e.getLineNumber() + e.getTypeName());
