@@ -23,20 +23,17 @@
   &quot;remoteClass&quot; : &quot;BMICalculator&quot;,
   &quot;remoteMethod&quot; : &quot;calculateBMI&quot;,
   &quot;remoteOptions&quot; : {
-    &quot;preTransformBundle&quot; : &quot;&quot;,
+    &quot;preTransformBundle&quot; : &quot;TranformBMISendJSON&quot;,
     &quot;postTransformBundle&quot; : &quot;&quot;
   },
   &quot;remoteTimeout&quot; : 30000,
   &quot;preTransformBundle&quot; : &quot;&quot;,
   &quot;postTransformBundle&quot; : &quot;&quot;,
-  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;Step1&quot;,
   &quot;sendJSONNode&quot; : &quot;&quot;,
   &quot;responseJSONPath&quot; : &quot;&quot;,
   &quot;responseJSONNode&quot; : &quot;&quot;,
-  &quot;extraPayload&quot; : {
-    &quot;weightKg&quot; : &quot;%weightKg%&quot;,
-    &quot;heightM&quot; : &quot;%heightM%&quot;
-  },
+  &quot;extraPayload&quot; : { },
   &quot;inProgressMessage&quot; : &quot;In Progress&quot;,
   &quot;postMessage&quot; : &quot;Done&quot;,
   &quot;failureNextLabel&quot; : &quot;Continue&quot;,
@@ -68,7 +65,7 @@
   &quot;useContinuation&quot; : false,
   &quot;businessCategory&quot; : &quot;&quot;,
   &quot;businessEvent&quot; : &quot;&quot;,
-  &quot;sendOnlyExtraPayload&quot; : true
+  &quot;sendOnlyExtraPayload&quot; : false
 }</propertySetConfig>
         <sequenceNumber>1.0</sequenceNumber>
         <type>Remote Action</type>
