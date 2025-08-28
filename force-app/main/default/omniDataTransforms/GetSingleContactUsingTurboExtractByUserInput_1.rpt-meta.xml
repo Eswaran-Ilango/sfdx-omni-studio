@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <description>Get Single Contact Using Turbo Extract By User Input.</description>
+    <errorIgnored>false</errorIgnored>
+    <fieldLevelSecurityEnabled>true</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>GetSingleContactUsingTurboExtractByUserInput</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterDataType>STRING</filterDataType>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>singleContactName</filterValue>
+        <globalKey>db39b90b-28e7-475c-9ab7-5ca6852f3a0e</globalKey>
+        <inputFieldName>Name</inputFieldName>
+        <inputObjectName>Contact</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetSingleContactUsingTurboExtractByUserInput</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>SingleContactDetails</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>18d0baf8-d30e-4ee4-b8b8-82aed1b7b17a</globalKey>
+        <inputFieldName>Name</inputFieldName>
+        <inputObjectName>Contact</inputObjectName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetSingleContactUsingTurboExtractByUserInput</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>SingleContactDetails</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>62d73526-c7a0-4ab8-905d-1ced2f2df5cc</globalKey>
+        <inputFieldName>Phone</inputFieldName>
+        <inputObjectName>Contact</inputObjectName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetSingleContactUsingTurboExtractByUserInput</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>SingleContactDetails</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>0245d0ae-2d1f-475e-8ee6-af12333eea29</globalKey>
+        <inputFieldName>Email</inputFieldName>
+        <inputObjectName>Contact</inputObjectName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetSingleContactUsingTurboExtractByUserInput</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>SingleContactDetails</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>LIMIT</filterOperator>
+        <filterValue>1</filterValue>
+        <globalKey>ce2465aa-a84b-4892-86c0-f524174701a0</globalKey>
+        <inputObjectName>Contact</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetSingleContactUsingTurboExtractByUserInput</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>SingleContactDetails</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>0e0b458e-b99e-40e8-8910-5f74d6cef835</globalKey>
+        <inputFieldName>Salutation</inputFieldName>
+        <inputObjectName>Contact</inputObjectName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetSingleContactUsingTurboExtractByUserInput</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>SingleContactDetails</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>a6ab47a4-e9e0-4b38-a9b2-41efb35f76f8</globalKey>
+        <inputFieldName>AccountId</inputFieldName>
+        <inputObjectName>Contact</inputObjectName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetSingleContactUsingTurboExtractByUserInput</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>SingleContactDetails</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;singleContactName&quot; : &quot;Carole White&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Turbo Extract</type>
+    <uniqueName>GetSingleContactUsingTurboExtractByUserInput_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>
