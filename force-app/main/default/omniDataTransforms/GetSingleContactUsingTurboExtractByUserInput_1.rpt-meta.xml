@@ -12,6 +12,21 @@
     <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
     <omniDataTransformItem>
         <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f69a2511-f311-4bad-8ba3-01badcf0b3a8</globalKey>
+        <inputFieldName>MailingCity</inputFieldName>
+        <inputObjectName>Contact</inputObjectName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetSingleContactUsingTurboExtractByUserInput</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>SingleContactDetails</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
         <filterDataType>STRING</filterDataType>
         <filterGroup>0.0</filterGroup>
         <filterOperator>=</filterOperator>
