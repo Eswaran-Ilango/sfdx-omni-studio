@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <description>Used to get the Country values from the Accounts list.</description>
+    <errorIgnored>false</errorIgnored>
+    <fieldLevelSecurityEnabled>true</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>UserAccountsCountryLWCTransform</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>cccdea46-944f-497c-85ca-3de38b466260</globalKey>
+        <inputFieldName>Country</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UserAccountsCountryLWCTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Country</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>var:AccountInfo:BillingCountry</formulaConverted>
+        <formulaExpression>AccountInfo:BillingCountry</formulaExpression>
+        <formulaResultPath>Country</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>7bbe2195-a9cc-4f0e-b259-a91fc091eca2</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UserAccountsCountryLWCTransform</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;AccountInfo&quot; : [ {
+    &quot;Name&quot; : &quot;Global Media&quot;,
+    &quot;BillingState&quot; : &quot;Ontario&quot;,
+    &quot;Id&quot; : &quot;001f600000FBucZAAT&quot;,
+    &quot;ContactInfo&quot; : [ {
+      &quot;Name&quot; : &quot;Geoff Minor&quot;,
+      &quot;Id&quot; : &quot;003f6000002DsSrAAK&quot;,
+      &quot;MailingCity&quot; : &quot;Toronto&quot;,
+      &quot;Phone&quot; : &quot;(415) 555-1212&quot;,
+      &quot;Email&quot; : &quot;info@salesforce.com&quot;
+    }, {
+      &quot;Name&quot; : &quot;Carole White&quot;,
+      &quot;Id&quot; : &quot;003f6000002DsSsAAK&quot;,
+      &quot;MailingCity&quot; : &quot;Toronto&quot;,
+      &quot;Phone&quot; : &quot;(415) 555-1212&quot;,
+      &quot;Email&quot; : &quot;info@salesforce.com&quot;
+    }, {
+      &quot;Name&quot; : &quot;Jon Amos&quot;,
+      &quot;Id&quot; : &quot;003f6000002DsStAAK&quot;,
+      &quot;MailingCity&quot; : &quot;Toronto&quot;,
+      &quot;Phone&quot; : &quot;(905) 555-1212&quot;,
+      &quot;Email&quot; : &quot;info@salesforce.com&quot;
+    } ],
+    &quot;Phone&quot; : &quot;(905) 555-1212&quot;,
+    &quot;BillingStreet&quot; : &quot;150 Chestnut Street&quot;,
+    &quot;BillingCity&quot; : &quot;Toronto&quot;,
+    &quot;BillingCountry&quot; : &quot;Canada&quot;,
+    &quot;Type&quot; : &quot;Prospect&quot;,
+    &quot;Industry&quot; : &quot;Media&quot;
+  }, {
+    &quot;Name&quot; : &quot;Acme&quot;,
+    &quot;AnnualRevenue&quot; : 100000000,
+    &quot;BillingState&quot; : &quot;NY&quot;,
+    &quot;Id&quot; : &quot;001f600000FBucaAAD&quot;,
+    &quot;ContactInfo&quot; : [ {
+      &quot;Name&quot; : &quot;Edward Stamos&quot;,
+      &quot;Id&quot; : &quot;003f6000002DsSuAAK&quot;,
+      &quot;MailingCity&quot; : &quot;New York City&quot;,
+      &quot;Phone&quot; : &quot;(212) 555-5555&quot;,
+      &quot;Email&quot; : &quot;info@salesforce.com&quot;
+    }, {
+      &quot;Name&quot; : &quot;Howard Jones&quot;,
+      &quot;Id&quot; : &quot;003f6000002DsSvAAK&quot;,
+      &quot;MailingCity&quot; : &quot;New York&quot;,
+      &quot;Phone&quot; : &quot;(212) 555-5555&quot;,
+      &quot;Email&quot; : &quot;info@salesforce.com&quot;
+    }, {
+      &quot;Name&quot; : &quot;Leanne Tomlin&quot;,
+      &quot;Id&quot; : &quot;003f6000002DsSwAAK&quot;,
+      &quot;MailingCity&quot; : &quot;New York&quot;,
+      &quot;Phone&quot; : &quot;(212) 555-5555&quot;,
+      &quot;Email&quot; : &quot;info@salesforce.com&quot;
+    } ],
+    &quot;Phone&quot; : &quot;(212) 555-5555&quot;,
+    &quot;BillingStreet&quot; : &quot;10 Main Rd.&quot;,
+    &quot;BillingCity&quot; : &quot;New York&quot;,
+    &quot;BillingCountry&quot; : &quot;USA&quot;,
+    &quot;Type&quot; : &quot;Prospect&quot;,
+    &quot;Industry&quot; : &quot;Manufacturing&quot;
+  }, {
+    &quot;Name&quot; : &quot;salesforce.com&quot;,
+    &quot;BillingState&quot; : &quot;CA&quot;,
+    &quot;Id&quot; : &quot;001f600000FBucbAAD&quot;,
+    &quot;ContactInfo&quot; : {
+      &quot;Name&quot; : &quot;Marc Benioff&quot;,
+      &quot;Id&quot; : &quot;003f6000002DsSxAAK&quot;,
+      &quot;MailingCity&quot; : &quot;San Francisco&quot;,
+      &quot;Phone&quot; : &quot;(415) 901-7000&quot;,
+      &quot;Email&quot; : &quot;info@salesforce.com&quot;
+    },
+    &quot;Phone&quot; : &quot;(415) 901-7000&quot;,
+    &quot;BillingStreet&quot; : &quot;The Landmark @ One Market, Suite 300&quot;,
+    &quot;BillingCity&quot; : &quot;San Francisco&quot;,
+    &quot;BillingCountry&quot; : &quot;USA&quot;,
+    &quot;Type&quot; : &quot;Customer&quot;,
+    &quot;Industry&quot; : &quot;Technology&quot;
+  }, {
+    &quot;Name&quot; : &quot;Pannier&quot;,
+    &quot;Id&quot; : &quot;001f600000FBucdAAD&quot;
+  }, {
+    &quot;Name&quot; : &quot;Redhold&quot;,
+    &quot;Id&quot; : &quot;001f600000FBuceAAD&quot;
+  }, {
+    &quot;Name&quot; : &quot;Bytecard&quot;,
+    &quot;Id&quot; : &quot;001f600000FBucfAAD&quot;
+  }, {
+    &quot;Name&quot; : &quot;Biodex&quot;,
+    &quot;Id&quot; : &quot;001f600000FBucgAAD&quot;
+  }, {
+    &quot;Name&quot; : &quot;Cardify&quot;,
+    &quot;Id&quot; : &quot;001f600000FBuchAAD&quot;
+  }, {
+    &quot;Name&quot; : &quot;Greenlam&quot;,
+    &quot;Id&quot; : &quot;001f600000FBuciAAD&quot;
+  }, {
+    &quot;Name&quot; : &quot;It&quot;,
+    &quot;Id&quot; : &quot;001f600000FBucjAAD&quot;
+  }, {
+    &quot;Name&quot; : &quot;Zamit&quot;,
+    &quot;Id&quot; : &quot;001f600000FBuckAAD&quot;
+  }, {
+    &quot;Name&quot; : &quot;Y-find&quot;,
+    &quot;Id&quot; : &quot;001f600000FBuclAAD&quot;
+  }, {
+    &quot;Name&quot; : &quot;Fixflex&quot;,
+    &quot;Id&quot; : &quot;001f600000FBucmAAD&quot;
+  } ]
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>UserAccountsCountryLWCTransform_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>
