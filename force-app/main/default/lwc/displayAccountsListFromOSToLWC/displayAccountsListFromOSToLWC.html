@@ -1,0 +1,15 @@
+<template>
+    <div class="slds-form-element">
+        <label class="slds-form-element__label" for="select-01">Select Country</label>
+        <div class="slds-form-element__control">
+            <div class="slds-select_container">
+                <select class="slds-select" id="select-01">
+                    <option value="">Select…</option>
+                    <template for:each={setCountries} for:item="country">
+                        <option key={country} value={country}>country</option>
+                    </template>
+                </select>
+            </div>
+        </div>
+    </div>
+</template>

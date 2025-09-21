@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniIntegrationProcedure xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customJavaScript>{&quot;AvailableCars&quot;:[{&quot;Id&quot;:&quot;a07f6000002g4unAAA&quot;,&quot;SelectedCarBox&quot;:true,&quot;Name&quot;:&quot;Honda Civic&quot;,&quot;Rent_Per_Day__c&quot;:2500,&quot;Modal__c&quot;:&quot;Civic&quot;,&quot;Members__c&quot;:5,&quot;Transmission_Type__c&quot;:&quot;Automatic&quot;,&quot;Comfort__c&quot;:&quot;High&quot;},{&quot;SelectedCarBox&quot;:false,&quot;Id&quot;:&quot;a07f6000002g4uoAAA&quot;,&quot;Name&quot;:&quot;Toyota Corolla&quot;,&quot;Rent_Per_Day__c&quot;:2200,&quot;Modal__c&quot;:&quot;Corolla&quot;,&quot;Members__c&quot;:5,&quot;Transmission_Type__c&quot;:&quot;Manual&quot;,&quot;Comfort__c&quot;:&quot;Medium&quot;},{&quot;SelectedCarBox&quot;:false,&quot;Id&quot;:&quot;a07f6000002g4upAAA&quot;,&quot;Name&quot;:&quot;Ford Endeavour&quot;,&quot;Rent_Per_Day__c&quot;:5000,&quot;Modal__c&quot;:&quot;Endeavour&quot;,&quot;Members__c&quot;:7,&quot;Transmission_Type__c&quot;:&quot;Automatic&quot;,&quot;Comfort__c&quot;:&quot;High&quot;},{&quot;SelectedCarBox&quot;:false,&quot;Id&quot;:&quot;a07f6000002g4uqAAA&quot;,&quot;Name&quot;:&quot;Maruti Swift&quot;,&quot;Rent_Per_Day__c&quot;:1800,&quot;Modal__c&quot;:&quot;Swift&quot;,&quot;Members__c&quot;:5,&quot;Transmission_Type__c&quot;:&quot;Manual&quot;,&quot;Comfort__c&quot;:&quot;Medium&quot;},{&quot;SelectedCarBox&quot;:false,&quot;Id&quot;:&quot;a07f6000002g4urAAA&quot;,&quot;Name&quot;:&quot;Hyundai Creta&quot;,&quot;Rent_Per_Day__c&quot;:3000,&quot;Modal__c&quot;:&quot;Creta&quot;,&quot;Members__c&quot;:5,&quot;Transmission_Type__c&quot;:&quot;Automatic&quot;,&quot;Comfort__c&quot;:&quot;High&quot;},{&quot;SelectedCarBox&quot;:false,&quot;Id&quot;:&quot;a07f6000002g4usAAA&quot;,&quot;Name&quot;:&quot;Kia Seltos&quot;,&quot;Rent_Per_Day__c&quot;:2800,&quot;Modal__c&quot;:&quot;Seltos&quot;,&quot;Members__c&quot;:5,&quot;Transmission_Type__c&quot;:&quot;Automatic&quot;,&quot;Comfort__c&quot;:&quot;High&quot;},{&quot;SelectedCarBox&quot;:false,&quot;Id&quot;:&quot;a07f6000002g4utAAA&quot;,&quot;Name&quot;:&quot;Mahindra Scorpio&quot;,&quot;Rent_Per_Day__c&quot;:3500,&quot;Modal__c&quot;:&quot;Scorpio&quot;,&quot;Members__c&quot;:7,&quot;Transmission_Type__c&quot;:&quot;Manual&quot;,&quot;Comfort__c&quot;:&quot;Medium&quot;},{&quot;SelectedCarBox&quot;:false,&quot;Id&quot;:&quot;a07f6000002g4uuAAA&quot;,&quot;Name&quot;:&quot;BMW X5&quot;,&quot;Rent_Per_Day__c&quot;:9000,&quot;Modal__c&quot;:&quot;X5&quot;,&quot;Members__c&quot;:5,&quot;Transmission_Type__c&quot;:&quot;Automatic&quot;,&quot;Comfort__c&quot;:&quot;Luxury&quot;},{&quot;SelectedCarBox&quot;:false,&quot;Id&quot;:&quot;a07f6000002g4uvAAA&quot;,&quot;Name&quot;:&quot;Audi Q7&quot;,&quot;Rent_Per_Day__c&quot;:11000,&quot;Modal__c&quot;:&quot;Q7&quot;,&quot;Members__c&quot;:7,&quot;Transmission_Type__c&quot;:&quot;Automatic&quot;,&quot;Comfort__c&quot;:&quot;Luxury&quot;},{&quot;SelectedCarBox&quot;:false,&quot;Id&quot;:&quot;a07f6000002g4uwAAA&quot;,&quot;Name&quot;:&quot;Tata Nexon&quot;,&quot;Rent_Per_Day__c&quot;:2000,&quot;Modal__c&quot;:&quot;Nexon&quot;,&quot;Members__c&quot;:5,&quot;Transmission_Type__c&quot;:&quot;Manual&quot;,&quot;Comfort__c&quot;:&quot;Medium&quot;}]}</customJavaScript>
+    <description>Selected Car Details out of available cars shown to customers.</description>
+    <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
+    <isActive>true</isActive>
+    <isIntegProcdSignatureAvl>false</isIntegProcdSignatureAvl>
+    <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
+    <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+    <isTestProcedure>false</isTestProcedure>
+    <isWebCompEnabled>false</isWebCompEnabled>
+    <language>Procedure</language>
+    <name>SelectedCarDetailsIP</name>
+    <omniProcessElements>
+        <description>List Action</description>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>GetSelectedCarAction</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;failOnStepError&quot; : false,
+  &quot;preventIntraListMerge&quot; : false,
+  &quot;isActive&quot; : true,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;mergeListsOrder&quot; : [ &quot;AvailableCars&quot; ],
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;filterListFormula&quot; : &quot;SelectedCarBox = true&quot;,
+  &quot;primaryListKey&quot; : &quot;&quot;,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalOutput&quot; : { },
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureResponse&quot; : { },
+  &quot;id&quot; : &quot;&quot;,
+  &quot;additionalInput&quot; : { },
+  &quot;advancedMerge&quot; : false,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;sortInDescendingOrder&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;hasPrimary&quot; : false,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;postActionLogging&quot; : &quot;&quot;,
+  &quot;preActionLogging&quot; : &quot;&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;dynamicOutputFields&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;allowMergeNulls&quot; : false,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;restOptions&quot; : { },
+  &quot;mergeFields&quot; : [ ]
+}</propertySetConfig>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>List Merge Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <description>Response Action</description>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>Response</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;returnFullDataJSON&quot; : false,
+  &quot;additionalOutput&quot; : {
+    &quot;SelectedCarDetail&quot; : &quot;%GetSelectedCarAction|1%&quot;
+  },
+  &quot;returnOnlyAdditionalOutput&quot; : true,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;responseFormat&quot; : &quot;&quot;,
+  &quot;id&quot; : &quot;&quot;,
+  &quot;isActive&quot; : true,
+  &quot;restOptions&quot; : { },
+  &quot;sendJSONNode&quot; : &quot;&quot;
+}</propertySetConfig>
+        <sequenceNumber>2.0</sequenceNumber>
+        <type>Response Action</type>
+    </omniProcessElements>
+    <omniProcessKey>SelectedCar_DetailsIP</omniProcessKey>
+    <omniProcessType>Integration Procedure</omniProcessType>
+    <propertySetConfig>{
+  &quot;transientValues&quot; : {
+    &quot;deactivateConsent&quot; : false
+  }
+}</propertySetConfig>
+    <subType>DetailsIP</subType>
+    <type>SelectedCar</type>
+    <uniqueName>SelectedCar_DetailsIP_Procedure_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+</OmniIntegrationProcedure>
